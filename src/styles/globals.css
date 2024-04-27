@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --background: 260, 100%, 99%; /* Ghost White */
+      --foreground: 173, 100%, 2%; /* Black */
+
+      --card: 40, 39%, 95%; /* Latte */
+      --card-foreground: 173, 100%, 2%; /* Black */
+
+      --popover: 40, 39%, 95%; /* Latte */
+      --popover-foreground: 173, 100%, 2%; /* Black */
+
+      --primary: 173, 100%, 2%; /* Black */
+      --primary-foreground: 260, 100%, 99%; /* Ghost White */
+
+      --secondary: 173, 100%, 2%; /* Black */
+      --secondary-foreground: 42, 100%, 95%; /* Cosmic Latte */
+
+      --muted: 0, 0%, 61%; /* Black - 30% */
+      --muted-foreground: 173, 100%, 2%; /* Black */
+
+      --accent: 42, 100%, 95%; /* Cosmic Latte */
+      --accent-foreground: 173, 100%, 2%; /* Black */
+
+      --destructive: 0, 60%, 66%; /* Red */
+      --destructive-foreground: 260, 100%, 99%; /* Ghost White */
+
+      --success: 122, 54%, 81%; /* Green */
+      --success-foreground: 173, 100%, 2%; /* Black */
+
+      --border: 260, 100%, 99%; /* Ghost White */
+      --input: 173, 100%, 2%; /* Black */
+      --ring: 0 0% 3.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 173, 100%, 2%; /* Black */
+      --foreground: 40, 39%, 95%; /* Latte */
+
+      --card: 0, 0%, 17%; /* Black - Elevation 1 */
+      --card-foreground: 40, 39%, 95%; /* Latte */
+
+      --popover: 0, 0%, 17%; /* Black - Elevation 1 */
+      --popover-foreground: 40, 39%, 95%; /* Latte */
+
+      --primary: 42, 100%, 95%; /* Cosmic Latte */
+      --primary-foreground: 173, 100%, 2%; /* Black */
+
+      --secondary: 260, 100%, 99%; /* Ghost White */
+      --secondary-foreground: 173, 100%, 2%; /* Black */
+
+      --muted: 42, 100%, 95%; /* Cosmic Latte */
+      --muted-foreground: 173, 100%, 2%; /* Black */
+
+      --accent: 42, 100%, 95%; /* Cosmic Latte */
+      --accent-foreground: 173, 100%, 2%; /* Black */
+
+      --success: 173, 100%, 2%; /* Black */
+
+      --destructive: 0, 60%, 66%; /* Red */
+      --destructive-foreground: 260, 100%, 99%; /* Ghost White */
+
+      --border: 173, 100%, 2%; /* Black */
+      --input: 42, 100%, 95%; /* Cosmic Latte */
+      --ring: 0 0% 83.1%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
